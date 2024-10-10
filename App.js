@@ -1,20 +1,46 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { Button, Image, StyleSheet, Text, View } from 'react-native';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+   
+    },
+    profile: {
+      flex: 1,
+      justifyContent: 'center',
+      alignItems: 'center',
+      height: '50%',
+      backgroundColor: 'red',
+    },
+    profileText: {
+      fontSize: 20,
+      fontWeight: 'bold',
+    },
+    profileSecond: {
+      flex: 1,
+      justifyContent: 'center',
+      alignItems: 'center',
+      height: '50%',
+      backgroundColor: 'blue',
+    },
+    profileSecondText: {
+      fontSize: 20,
+      fontWeight: 'bold',
+    }
+})
+export default function App() {
+
+  return (
+    <View style={styles.container}>
+       <View style={styles.profile}>
+        <Text style={styles.profileText}>Ulug'bek</Text>
+       </View>
+       <View style={styles.profileSecond}>
+        <Text style={styles.profileSecondText}>Ulug'bek</Text>
+       </View>
+       </View>
+  );
+}
+
